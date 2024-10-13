@@ -1,0 +1,7 @@
+services:
+  web:
+    image: nginx:latest # Using the latest version of NGINX
+    ports:
+      - "80:80"         # Mapping port 80 on the host to port 80 in the container
+    volumes:
+      - ./:/usr/share/nginx/html  # Bind mount for serving files from the local directory
